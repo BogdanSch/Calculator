@@ -47,7 +47,10 @@
         ?>
         <form action="index.php" method="get">
             <h1>Calculator</h1>
-            <?php echo $result_message; ?>
+            <?php 
+                if(isset($result_message))
+                    echo $result_message;
+            ?>
             <div class="input-area">
                 <label for="x1">Enter first value: 
                     <input type="number" name="x1" id="x1">
